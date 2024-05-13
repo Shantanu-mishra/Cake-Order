@@ -11,7 +11,7 @@
 
 
 
-// Cake Order Item Customisations 
+// Recipe Customisations 
 frappe.ui.form.on("Recipe",{
 	rate:function(frm,cdt,cdn){
 		var child = locals[cdt][cdn];
