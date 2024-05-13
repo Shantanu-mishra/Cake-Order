@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:cake_name",
+ "creation": "2024-05-11 13:19:37.737530",
+ "default_view": "Image",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "cake_name",
+  "description",
+  "column_break_uzwl",
+  "attach_image",
+  "price",
+  "recipe_section",
+  "recipe",
+  "total_making_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "column_break_uzwl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Attach Image",
+   "search_index": 1
+  },
+  {
+   "fieldname": "recipe_section",
+   "fieldtype": "Section Break",
+   "label": "Recipe"
+  },
+  {
+   "fieldname": "recipe",
+   "fieldtype": "Table",
+   "label": "Recipe",
+   "options": "Recipe"
+  },
+  {
+   "fieldname": "total_making_cost",
+   "fieldtype": "Currency",
+   "label": "Total Making Cost"
+  },
+  {
+   "fieldname": "cake_name",
+   "fieldtype": "Data",
+   "label": "Cake Name",
+   "unique": 1
+  }
+ ],
+ "image_field": "attach_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-11 17:06:14.981787",
+ "modified_by": "Administrator",
+ "module": "Cake Shop",
+ "name": "Cake",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

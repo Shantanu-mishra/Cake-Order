@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-11 13:17:16.614319",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cake",
+  "image_wujz",
+  "desciption",
+  "image",
+  "section_break_ajha",
+  "rate",
+  "qty",
+  "column_break_slwi",
+  "amount",
+  "section_break_iihm",
+  "add_name",
+  "add_year_candles",
+  "column_break_oyzk",
+  "write_name",
+  "write_year"
+ ],
+ "fields": [
+  {
+   "fieldname": "cake",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cake",
+   "options": "Cake",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "cake.description",
+   "fieldname": "desciption",
+   "fieldtype": "Small Text",
+   "label": "Desciption"
+  },
+  {
+   "fieldname": "section_break_ajha",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "cake.price",
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_slwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_iihm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "description": "Optional",
+   "fieldname": "add_name",
+   "fieldtype": "Check",
+   "label": "Add Name"
+  },
+  {
+   "default": "0",
+   "description": "Optional",
+   "fieldname": "add_year_candles",
+   "fieldtype": "Check",
+   "label": "Add Year Candles"
+  },
+  {
+   "fieldname": "column_break_oyzk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.add_name ==1;",
+   "fieldname": "write_name",
+   "fieldtype": "Data",
+   "label": "Write Name"
+  },
+  {
+   "depends_on": "eval:doc.add_year_candles == 1;",
+   "fieldname": "write_year",
+   "fieldtype": "Int",
+   "label": "Write Year"
+  },
+  {
+   "fetch_from": "cake.attach_image",
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  },
+  {
+   "fieldname": "image_wujz",
+   "fieldtype": "Image",
+   "options": "image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-13 19:44:51.045159",
+ "modified_by": "Administrator",
+ "module": "Cake Shop",
+ "name": "Cake Order Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
