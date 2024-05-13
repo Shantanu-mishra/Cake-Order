@@ -7,9 +7,9 @@
  "engine": "InnoDB",
  "field_order": [
   "ingredient",
-  "required",
-  "column_break_uyrt",
   "rate",
+  "column_break_uyrt",
+  "required",
   "amount"
  ],
  "fields": [
@@ -21,6 +21,7 @@
    "options": "Ingredient"
   },
   {
+   "default": "1",
    "fieldname": "required",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -47,7 +48,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-11 16:53:17.647350",
+ "modified": "2024-05-13 21:11:53.137943",
  "modified_by": "Administrator",
  "module": "Cake Shop",
  "name": "Recipe",

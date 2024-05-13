@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:name1",
  "creation": "2024-05-10 15:31:26.323420",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -15,7 +16,8 @@
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Name"
+   "label": "Name",
+   "unique": 1
   },
   {
    "fieldname": "quantity_available",
@@ -41,10 +43,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-10 19:52:17.743074",
+ "modified": "2024-05-13 21:09:33.771912",
  "modified_by": "Administrator",
  "module": "Cake Shop",
  "name": "Ingredient",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
